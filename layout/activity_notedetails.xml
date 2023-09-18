@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notedetails">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofnotedetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleofnotedetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="disp[layed title"
+            android:textColor="@color/black" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- EditText for note content -->
+    <TextView
+        android:id="@+id/contentofnotedetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarofnotedetail"
+        android:background="#faf7f7"
+        android:gravity="top|left"
+        android:textSize="17sp"
+        android:padding="15dp"
+
+        android:textColor="@color/black" ></TextView>
+
+    <!-- FloatingActionButton for saving the note -->
+
+</RelativeLayout>
